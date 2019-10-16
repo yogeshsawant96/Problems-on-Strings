@@ -8,7 +8,7 @@ void findSub(char * arr1,char * arr2)
 		return;
 	}
 	for(len=0;arr2[len]!='\0';len++);
-	while(arr1[i]!='\0')
+	while(arr1[i]!='\0'&& arr2[j]!='\0')
 	{
 		if(arr1[i]==arr2[j])
 		{
@@ -26,7 +26,7 @@ void findSub(char * arr1,char * arr2)
 	}
 	else
 	{
-		printf(" %s is not present");
+		printf(" %s is not present",arr2);
 	}
 }
 int main()
